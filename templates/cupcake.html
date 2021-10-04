@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcakes!</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+    <script defer src="/static/app.js"></script>
+</head>
+<body>
+
+    <h1>Cupcakes!</h1>
+
+    <ul id="cupcake-list">
+        <!-- cupcake list populates here. -->
+    </ul>
+
+    <h2>Add a New Cupcake</h2>
+    <form>
+        <label>Flavor: <input type="text" id="flavor" name="flavor"></label>
+        <label>Size: <input type="text" id="size" name="size"></label>
+        <label>Rating: <input type="number" id="rating" name="rating"></label>
+        <label>Image: <input type="text" id="image" name="image"></label>
+
+        <button>Add Cupcake</button>
+    </form>
+
+</body>
+</html>

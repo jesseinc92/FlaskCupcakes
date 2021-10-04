@@ -1,6 +1,6 @@
 """Flask app for Cupcakes"""
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from sqlalchemy.sql.elements import Null
 from models import db, connect_db, Cupcake
 
@@ -24,6 +24,12 @@ def serialize_item(cupcake):
         'rating': cupcake.rating,
         'image': cupcake.image
     }
+    
+
+@app.route('/')
+def cupcake_homepage():
+    '''Displays a list of cupcakes, as well as a form to add form.'''
+    return render_template('cupcake.html')
 
 
 @app.route('/api/cupcakes')
